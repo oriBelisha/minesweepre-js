@@ -1,0 +1,96 @@
+body {
+  background-color: lightcoral;
+  color: blue;
+  min-height: 100vh;
+  margin: 0;
+}
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.flex-help-buttons {
+  display: flex;
+  flex-direction: row;
+  /* align-items: center; */
+  justify-content: flex-start;
+  gap: 5px;
+}
+
+.table-container {
+  height: 550px;
+  width: 550px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .board{ */
+
+/* } */
+button:hover {
+  background-color: #f694e7;
+  cursor: grab;
+}
+button {
+  background-color: #df17a6;
+  color: azure;
+  font-size: 15px;
+  /* margin-bottom: 10px; */
+}
+.cell {
+  background: #000;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  transition: 0.7s;
+  font-size: 25px;
+}
+
+.cell:hover {
+  background-color: rgb(22, 215, 38);
+  cursor: grab;
+}
+.marked {
+  background-color: gray;
+}
+.shown {
+  background-color: white;
+}
+
+.timer {
+  margin-block-start: 10px;
+  font-size: 25px;
+  color: red;
+}
+.hints {
+  background-color: rgb(184, 69, 184);
+}
+
+.endgamemines {
+  background-color: red;
+}
+
+.safe {
+  background-color: lightblue;
+}
+
+.footer {
+  position: fixed;
+  background-color: brown;
+  color: bisque;
+  bottom: 0;
+  /* padding-top: 50px; */
+  height: 5vh;
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.diffBox {
+  gap: 5px;
+  display: flex;
+  flex-direction: row;
+}

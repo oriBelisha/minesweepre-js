@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head style="align-items: center" style="flex-direction: column">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>mine sweeper O.B</title>
+  </head>
+  <body onload="inIt()">
+    <div class="main">
+      <div id="result"></div>
+      <h1>MINE SWEEPER</h1>
+      <h2 id="level">GAME DIFFICULTY: <span></span></h2>
+      <h2 id="lives">lives: <span></span></h2>
+      <h3>
+        <div class="flex-help-buttons">
+          <button id="restart" onclick="inIt()">Restart</button>
+          <button id="undo" onclick="undo()">Undo</button>
+          <button id="hint" onclick="hint()">Hint</button>
+          <button id="safe" onclick="safeClick()">
+            SafeClick: <span></span>
+          </button>
+        </div>
+      </h3>
+      <div class="diffBox">
+        <button id="easy" onclick="setDiff(this)">EASY</button>
+        <button id="medium" onclick="setDiff(this)">MEDIUM</button>
+        <button id="hard" onclick="setDiff(this)">HARD</button>
+        <button id="sevenboom" onclick="sevenBoom()">Seven Boom</button>
+        <!-- <button id="fuckinghard" onclick="setDiff(this)">FUCKINGHARD</button> -->
+      </div>
+      <!-- <div class="timer">
+        <span id="hours"></span>
+        :
+        <span id="minutes"></span>
+        :
+        <span id="seconds"></span>
+      </div> -->
+      <div class="timer"></div>
+      <div class="table-container">
+        <table>
+          <tbody class="board"></tbody>
+        </table>
+      </div>
+
+      <div style="font-size: 20px">
+        best:<span id="bestplayername"></span>
+        <span id="bestplayerscore"></span>
+      </div>
+    </div>
+    <div class="footer"><p>@made by- ori belisha@</p></div>
+    <script src="js/util.js"></script>
+    <script src="js/main.js"></script>
+    <script></script>
+  </body>
+</html>
